@@ -5,7 +5,7 @@ const swaggerUI = require('swagger-ui-express') ;
 const app = express() ;
 app.use(express.json()) ;
 
-const port = process.env.PORT || 3000 ;
+const port = process.env.PORT || 2010 ;
 
 // Swagger configuration
 const swaggerOptions = {
@@ -16,7 +16,7 @@ const swaggerOptions = {
         version: '1.0.0',
         description: 'Simple API example with Swagger and Docker'
       },
-      servers: [{ url: 'http://localhost:3000' }],
+      servers: [{ url: 'http://localhost:2010' }],
     },
     apis: ['./app.js'],
   };
