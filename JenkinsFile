@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                     // Exécuter le conteneur Docker
-                    docker.image("andriamanaja/ctmotors:${env.BUILD_ID}").run('-p 2000:2000')
+                    docker.image("andriamanaja/ctmotors:${env.BUILD_ID}").run('-p 2010:2010')
                 }
             }
         }
